@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	background-color: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	transition: all 100ms;
+	color: #eb7100;
+	font-weight: 600;
+}
+
+
+
+a:hover {
+	text-decoration: underline;
+}
+
+button {
+	font-weight: 500;
+}
+
+.container {
+	width: 70%;
+	margin: 0 auto;
+
+
+}
+
+/* Nav bar */
+
+.nav__logo {
+	width: 100px;
+
+}
+
+
+main {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 1em;
+	padding: 0px 200px;
+	/* justify-content: center; */
+}
+
+main h1 {
+	font-weight: 500;
+}
+
+.main__container {
+	max-width: 700px;
+	display: flex;
+	flex-direction: column;
+	gap: 1.2em;
+	background-color: #ffffff;
+	padding: 1.8em;
+	border-radius: 8px;
+	
+}
+
+.main__form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5em;
+	text-align: left;
+}
+
+.main__form label {
+	width: 100%;
+}
+
+.main__form label p {
+	color: #000;
+}
+
+.main__form input {
+	width: 100%;
+	padding: 1.2em 7em;
+	border-radius: 4px;
+	margin-top: 0px;
+	border-color: #f5f5f5;
+	text-align: left;
+}
+
+.main__form input::placeholder {
+	color: #8181819a;
+	text-align: left;
+}
+
+.main__formCta {
+	text-align: center;
+	font-size: 0.8rem;
+}
+
+#signup__button {
+	background-color: #eb7100;
+	color: #ffffff;
+	padding: 1em;
+	border-radius: 17px;
+	transition: all 100ms;
+	border: none;
+}
+
+#signup__button:hover {
+	background-color: #eb7100;
+	cursor: pointer;
+}
+
+
+.separator {
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.separator::before,
+.separator::after {
+	content: '';
+	flex: 1;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.separator:not(:empty)::before {
+	margin-right: 0.5em;
+}
+
+.separator:not(:empty)::after {
+	margin-left: 0.5em;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table,
+th,
+td {
+	border: solid 1px #818181;
+	text-align: center;
+	padding: 0.25em;
+}
+
+
+
+
+
+@media (max-width: 780px) {
+	body {
+		background-color: #ffffff;
+		height: 100%;
+        margin: 10px 10px;
+        border: 0px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: #fff;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	.container {
+		width: 100%;
+		padding: 1em 2em;
+        border: 0px;
+	}
+	main {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 1em;
+		padding: 0px 10px;
+		/* justify-content: center; */
+	}
+}
+
+     
